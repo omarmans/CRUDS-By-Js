@@ -1,0 +1,107 @@
+*{
+      padding: 0;
+      margin: 0;
+      /* font-family: sans-serif; */
+}
+
+body{
+      background-color: #222;
+      color: #fff;
+}
+.crud{
+      width: 80%;
+      margin: auto;
+      /* ممكن توسط عن طريق البودي برضو */
+}
+@media (max-width:767px) {
+      .crud{
+            text-align: center;
+      }
+      .price{
+            text-align: left;
+      }
+      small{
+            display: block;
+            width: fit-content;
+            margin:10px 0;
+      }
+      table{
+          
+            overflow: auto;
+      }
+}
+.head{
+      text-align: center;
+      margin: 10px 0;
+}
+
+input{
+      width: 100%;
+      height: 30px;
+      outline: none;
+      border: none;
+      background-color: #111;
+      margin: 4px 0;
+      border-radius: 4px;
+      padding: 4px;
+      color: #fff;
+      transition: .5s;
+}
+button{
+      width: 100%;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      background: #310044;
+      color: #fff;
+      border-radius: 20px;
+      transition: .5s;
+
+}
+button:hover{
+      background-color: #51045f;
+      letter-spacing: 2px;
+}
+button:disabled{
+      cursor: no-drop;
+      opacity: 0.5;
+}
+input:focus{
+      background-color: #000;
+      transform: scale(1.1);
+}
+.price input{
+width: 20%;
+}
+#total{
+      background-color: #a00d02;
+      padding: 5px 3px;
+      border-radius: 3px;
+      margin-left: 5px;
+}
+#total::before{
+      content: "Total : ";
+}
+.btnsearch{
+      display: flex;
+      justify-content: space-between;
+}
+.btnsearch button{
+      width: 45%;
+}
+
+
+table{
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+}
+table th{
+      text-transform: uppercase;
+}
+th,td{
+      padding: 5px;
+}
+.delete_all{
+      margin: 10px 0 ;
+}
